@@ -32,3 +32,37 @@
     Chung received msg is:EventMessage{id=2, message='SendToChung&Iris', timeStamp=1538044029685}
     Iris received msg is:EventMessage{id=2, message='SendToChung&Iris', timeStamp=1538044029685}
     被观察主题weChatServerSubject调用了notifyAllObserver方法,通知了所有的订阅者
+
+### 5.程序uml类图
+
+        @startuml
+        title 观察者模式类图
+        interface Observer {
+        	void notifyEventMessage( EventMessage eventMessage );
+        }
+        
+        class IrisObserver implements Observer{
+        }
+        class ChungObserver implements Observer{
+        }
+        
+        class EventMessage {
+            - Long id;
+            - String message;
+            - Long currentStamp;
+        }
+        
+        interface Subject {
+            void follow( Observer observer );
+            void unfollow( Observer observer );
+            void notifyAllObserver( EventMessage eventMessage );
+        }
+        
+        class WeChatServerSubject implements Subject {
+            - Set<Observer> observers;
+        }
+        
+        class Main {
+        }
+        
+        @enduml
