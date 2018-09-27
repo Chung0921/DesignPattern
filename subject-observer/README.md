@@ -33,7 +33,7 @@
     Iris received msg is:EventMessage{id=2, message='SendToChung&Iris', timeStamp=1538044029685}
     被观察主题weChatServerSubject调用了notifyAllObserver方法,通知了所有的订阅者
 
-### 5.程序uml类图
+### 6.程序uml类图
 
         @startuml
         title 观察者模式类图
