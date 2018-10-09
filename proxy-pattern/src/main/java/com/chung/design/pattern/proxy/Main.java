@@ -1,5 +1,6 @@
 package com.chung.design.pattern.proxy;
 
+import com.chung.design.pattern.proxy.cglib.CglibEntrance;
 import com.chung.design.pattern.proxy.dynamic.DynamicProxyHandler;
 
 import java.lang.reflect.InvocationHandler;
@@ -16,9 +17,15 @@ public class Main {
 	public static void main( String[] args ) {
 		//静态代理模式
 		staticProxy();
-		System.out.println("========================================");
+		System.out.println( "========================================" );
 		//动态代理模式
 		dynamicProxy();
+		System.out.println( "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" );
+		//CGLIB代理模式 调用invoke实现
+		CglibEntrance.testInvoke();
+		System.out.println( "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^" );
+		//CGLIB代理模式 调用invokeSuper实现
+		CglibEntrance.testInvokeSuper();
 	}
 
 	public static void staticProxy() {
@@ -43,7 +50,7 @@ public class Main {
 		//获取一个动态代理对象
 		InvocationHandler invocationHandler =
 				new DynamicProxyHandler( albumDao );
-		System.out.println("生成代理类的处理类");
+		System.out.println( "生成代理类的处理类" );
 		AlbumDao albumDaoProxy = (AlbumDao) Proxy.newProxyInstance( classLoader, interfaces, invocationHandler );
 		System.out.println( "开始调用daoProxy..." );
 		albumDaoProxy.showAll();

@@ -5,8 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.chung.design.pattern</groupId>
-    <artifactId>DesignPattern</artifactId>
+    <artifactId>design-pattern</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>design-pattern</name>
+    <packaging>pom</packaging>
 
     <modules>
         <module>proxy-pattern</module>
@@ -24,7 +26,7 @@
             <dependency>
                 <groupId>cglib</groupId>
                 <artifactId>cglib</artifactId>
-                <version>3.2.8</version>
+                <version>${cglib.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
