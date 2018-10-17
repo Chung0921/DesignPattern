@@ -13,6 +13,7 @@
     <modules>
         <module>proxy-pattern</module>
         <module>subject-observer</module>
+        <module>builder-pattern</module>
     </modules>
 
     <properties>
