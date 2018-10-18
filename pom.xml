@@ -15,6 +15,7 @@
         <module>subject-observer</module>
         <module>builder-pattern</module>
         <module>template-pattern</module>
+        <module>chain-of-responsibility</module>
     </modules>
 
     <properties>

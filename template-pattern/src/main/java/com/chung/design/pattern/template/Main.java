@@ -2,7 +2,7 @@ package com.chung.design.pattern.template;
 
 /**
  * Created by Chung.
- * Usage:
+ * Usage: 模板方法模式
  * Description:
  * Create dateTime: 18/10/18
  */
