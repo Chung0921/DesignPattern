@@ -8,7 +8,7 @@ import java.lang.reflect.Proxy;
 
 /**
  * Created by Chung.
- * Usage:
+ * Usage: 代理设计模式
  * Description:
  * Create dateTime: 18/9/28
  */

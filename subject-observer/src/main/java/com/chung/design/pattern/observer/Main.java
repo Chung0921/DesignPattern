@@ -2,7 +2,7 @@ package com.chung.design.pattern.observer;
 
 /**
  * Created by Chung.
- * Usage:
+ * Usage: 观察者设计模式
  * Description:
  * Create dateTime: 18/9/27
  */

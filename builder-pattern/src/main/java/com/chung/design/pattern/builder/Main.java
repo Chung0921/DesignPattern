@@ -2,7 +2,7 @@ package com.chung.design.pattern.builder;
 
 /**
  * Created by Chung.
- * Usage:
+ * Usage: 建造者设计模式
  * Description:
  * Create dateTime: 18/10/17
  */
