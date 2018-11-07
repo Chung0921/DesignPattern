@@ -1,5 +1,7 @@
 package com.chung.design.pattern.adapter;
 
+import com.chung.design.pattern.adapter.clazz.ClassAdapterEntrance;
+
 /**
  * Created by Chung.
  * Usage: 适配器设计模式

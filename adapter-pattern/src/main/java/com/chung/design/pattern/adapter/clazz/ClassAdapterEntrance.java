@@ -1,4 +1,4 @@
-package com.chung.design.pattern.adapter;
+package com.chung.design.pattern.adapter.clazz;
 
 /**
  * Created by Chung.
