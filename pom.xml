@@ -17,6 +17,7 @@
         <module>template-pattern</module>
         <module>chain-of-responsibility</module>
         <module>agency-pattern</module>
+        <module>adapter-pattern</module>
     </modules>
 
     <properties>
