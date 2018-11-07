@@ -28,6 +28,11 @@
 ##### com.chung.design.pattern.adapter.object.AppleUsbObjectAdapter 对象适配器中的适配器类,通过实现目标接口,调用被适配类的方法,完成适配工作.在最终适配方法#doCharge中,完成原有被适配的类的方法调用,以及其余逻辑的编写.
 ##### com.chung.design.pattern.adapter.object.ObjectAdapterEntrance 作为对象适配器的程序入口,完成调用过程;详见代码;
 
+##### 4.3.接口适配器结构:
+##### com.chung.design.pattern.adapter.connector.UsbConnectorTarget 接口适配器中的接口,封装多种方法给用户调用,底层通过抽象类和实现类完成具体方法的适配.
+##### com.chung.design.pattern.adapter.connector.AppleUsbConnectorAdaptee 接口适配器中的被适配的实现类.
+##### com.chung.design.pattern.adapter.connector.AppleUsbConnectorAdapter 接口适配器中的抽象类,通过继承接口,实例化无用方法,让子类重写待适配的方法,完成适配工作.
+##### com.chung.design.pattern.adapter.connector.ConnectorAppleUsbEntrance 作为接口适配器的程序入口,完成调用过程;详见代码;
 
 ### 5.程序命令行输出如下
 
@@ -46,7 +51,11 @@
         正在使用MicroUsb接口进行充电...
         充电完成!
         ----->对象适配器模式结束
-
+        
+##### 5.3.接口适配器输出如下:
+        尝试充电...
+        使用apple的lighting接口进行充电...
+        充电完成...
 
 ### 6.程序uml类图
     @startuml
@@ -89,3 +98,19 @@
     AppleUsbObjectAdapter o-- MicroUsbObjectAdaptee
     @enduml
     
+    @startuml
+    title 接口适配器类图
+    interface UsbConnectorTarget {
+      void doChargeWithMicroUsb();
+      void doChargeWithAppleUsb();
+    }
+    abstract class AppleUsbConnectorAdapter implements UsbConnectorTarget{
+      void doChargeWithMicroUsb();
+    }
+    class AppleUsbConnectorAdaptee extends AppleUsbConnectorAdapter{
+      void doChargeWithAppleUsb();
+    }
+    class ConnectorAppleUsbEntrance{
+      
+    }
+    @enduml

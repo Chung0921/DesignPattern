@@ -1,6 +1,8 @@
 package com.chung.design.pattern.adapter;
 
 import com.chung.design.pattern.adapter.clazz.ClassAdapterEntrance;
+import com.chung.design.pattern.adapter.connector.ConnectorAppleUsbEntrance;
+import com.chung.design.pattern.adapter.object.ObjectAdapterEntrance;
 
 /**
  * Created by Chung.
@@ -11,6 +13,13 @@ import com.chung.design.pattern.adapter.clazz.ClassAdapterEntrance;
 public class Main {
 
 	public static void main( String[] args ) {
+		System.out.println("=================ClassAdapterEntrance=================");
 		ClassAdapterEntrance.main( args );
+		System.out.println("\n\n");
+		System.out.println("=================ObjectAdapterEntrance=================");
+		ObjectAdapterEntrance.main( args );
+		System.out.println("\n\n");
+		System.out.println("=================ConnectorAppleUsbEntrance=================");
+		ConnectorAppleUsbEntrance.main( args );
 	}
 }
