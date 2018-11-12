@@ -19,6 +19,7 @@
         <module>agency-pattern</module>
         <module>adapter-pattern</module>
         <module>decorator-pattern</module>
+        <module>filter-pattern</module>
     </modules>
 
     <properties>
