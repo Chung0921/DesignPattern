@@ -18,6 +18,7 @@
         <module>chain-of-responsibility</module>
         <module>agency-pattern</module>
         <module>adapter-pattern</module>
+        <module>decorator-pattern</module>
     </modules>
 
     <properties>
