@@ -21,6 +21,7 @@
         <module>decorator-pattern</module>
         <module>filter-pattern</module>
         <module>iterator-pattern</module>
+        <module>factory-pattern</module>
     </modules>
 
     <properties>
